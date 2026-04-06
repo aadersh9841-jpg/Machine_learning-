@@ -1,0 +1,16 @@
+
+
+import pandas as pd
+df = pd.read_excel(r'/Users/aadershjoshi/Desktop/Data science project work /Obs.xls', engine='xlrd')
+df.head()
+print(df.head())
+null = df.isnull().sum()
+print(null)
+drop = df.dropna(inplace=True)
+print(drop)
+
+head = df.head()
+print(head)
+
+
+
